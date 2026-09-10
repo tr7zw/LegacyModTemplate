@@ -36,6 +36,7 @@ loom {
     }
 
     mixin {
+        useLegacyMixinAp = true
         defaultRefmapName.set("$modID.mixins.refmap.json")
     }
 
@@ -60,7 +61,7 @@ val shade: Configuration by configurations.creating {
 dependencies {
     minecraft("com.mojang:minecraft:1.12.2")
     mappings("de.oceanlabs.mcp:mcp_stable:39-1.12")
-    forge("net.minecraftforge:forge:1.12.2-14.23.0.2486")
+    forge("net.minecraftforge:forge:1.12.2-14.23.5.2847")
 
     shade("org.spongepowered:mixin:0.7.11-SNAPSHOT") {
         isTransitive = false
