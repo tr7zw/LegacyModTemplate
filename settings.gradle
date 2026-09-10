@@ -23,7 +23,7 @@ stonecutter {
 
 		def settings = new JsonSlurper().parseText(file('versions.json').text)
 		for (String ver : settings.versions) {
-			def scriptName = "versions/1.8.9-forge/build.gradle.kts"
+			def scriptName = "versions/$ver/build.gradle.kts"
 			version("$ver","$ver".split("-")[0]).buildscript(scriptName)
 		}
 
