@@ -1,0 +1,29 @@
+version: '0.0.2'
+defaultReplacements:
+  dependencies: ""
+  fabric_dependencies: ""
+  forge_dependencies: ""
+  neoforge_dependencies: ""
+  curseforge_dependencies: ""
+  modrinth_dependencies: ""
+  licensename: "LICENSE"
+  author: "tr7zw"
+  group: "dev.tr7zw"
+  licenseName: "tr7zw Protective License"
+  description: "Allan, please add details!"
+  homepageUrl: "https://github.com/tr7zw"
+  sourcesUrl: "https://github.com/tr7zw"
+  issuesUrl: "https://github.com/tr7zw"
+  curseforgeid: ""
+  modrinthid: ""
+  breaks: ""
+customEntries:
+  - versions/1.8.9-forge/build.gradle.kts
+  - versions/1.8.9-forge/gradle.properties
+  - globalReplacements.gradle
+  - settings.gradle
+  - gradle.properties
+availableFlags:
+  - autopublish
+  - modrinth
+  - curseforge
