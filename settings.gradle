@@ -6,6 +6,15 @@ pluginManagement {
             name = "tr7zw-proxy"
             url "https://maven.tr7zw.dev/repository/maven-public/"
         }
+        maven {
+            // RetroFuturaGradle's plugin marker is published here, not (reliably) on the Gradle Plugin Portal.
+            name = "GTNH Maven"
+            url = "https://nexus.gtnewhorizons.com/repository/public/"
+            mavenContent {
+                includeGroup("com.gtnewhorizons")
+                includeGroupByRegex("com\\.gtnewhorizons\\..+")
+            }
+        }
         gradlePluginPortal()
     }
 }

@@ -19,6 +19,13 @@ java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(8))
 }
 
+// Legacy launchwrapper requires a Java 8 URLClassLoader, so force run tasks off the Gradle daemon's JVM.
+tasks.withType<JavaExec>().configureEach {
+    javaLauncher.set(javaToolchains.launcherFor {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    })
+}
+
 loom {
     runConfigs {
         getByName("client") {
@@ -36,7 +43,6 @@ loom {
     }
 
     mixin {
-        useLegacyMixinAp = true
         defaultRefmapName.set("$modID.mixins.refmap.json")
     }
 
