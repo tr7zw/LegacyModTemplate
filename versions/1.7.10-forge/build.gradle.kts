@@ -58,7 +58,6 @@ base.archivesName.set("$modName-Forge-mc$forgeMcVersion")
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(8))
-        vendor.set(JvmVendorSpec.AZUL)
     }
 }
 
