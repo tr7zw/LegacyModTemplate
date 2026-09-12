@@ -24,6 +24,9 @@ customEntries:
   - versions/1.8.9-forge/gradle.properties
   - versions/1.12.2-forge/build.gradle.kts
   - versions/1.12.2-forge/gradle.properties
+  - versions/1.8.9-ornithe/build.gradle.kts
+  - versions/1.8.9-ornithe/gradle.properties
+  - src/main/resources/fabric.mod.json
   - globalReplacements.gradle
   - settings.gradle
   - gradle.properties

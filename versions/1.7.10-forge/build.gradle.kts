@@ -45,6 +45,14 @@ plugins {
     id("com.gtnewhorizons.retrofuturagradle") version "2.0.4"
 }
 
+stonecutter {
+    constants.match(
+        "forge",
+        "ornithe",
+        "forge",
+    )
+}
+
 val modID = "$id$"
 val modName = "$name$"
 val mavenGroup = "$group$"

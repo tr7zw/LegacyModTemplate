@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "$id$",
+  "name": "$name$",
+  "version": "${version}",
+  "environment": "*",
+  "description": "$description$",
+  "authors": [
+    "$author$"
+  ],
+  "mixins": [
+    "$id$.mixins.json"
+  ],
+  "entrypoints": {
+    "client": [
+      "$fabric_entrypoint$"
+    ]
+  }
+}
